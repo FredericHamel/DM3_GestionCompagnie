@@ -48,7 +48,7 @@ public abstract class Place extends Leaf implements IVisitable {
 		throw new UnsupportedOperationException();
 	}
 
-	public float getPrix() {
+	public Float getPrix() {
 		// TODO - implement Place.getPrix
 		throw new UnsupportedOperationException();
 	}

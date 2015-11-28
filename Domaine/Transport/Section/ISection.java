@@ -14,7 +14,7 @@ public interface ISection {
 
 	String getSection();
 
-	float getPrix();
+	Float getPrix();
 
 	/**
 	 * 

@@ -111,7 +111,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param s
 	 * @param c
 	 */
-	public Disposition creerDisposition(ISection s, Domaine.Systeme.Fabrique.CreateurDisposition c) {
+	public Disposition creerDisposition(ISection s, CreateurDisposition c) {
 		// TODO - implement AdministrateurSysteme.creerDisposition
 		throw new UnsupportedOperationException();
 	}
@@ -151,15 +151,6 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 */
 	public void supprimerCompagnie(String uniqueID) {
 		// TODO - implement AdministrateurSysteme.supprimerCompagnie
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param v
-	 */
-	public void verifierDisponibiliteVoyage(Voyage v) {
-		// TODO - implement AdministrateurSysteme.verifierDisponibiliteVoyage
 		throw new UnsupportedOperationException();
 	}
 
@@ -247,6 +238,15 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 */
 	public void modificationVoyage(Voyage v, Date dateDepart, Date dateArrivee, Time heureDepart, Time heureArrive, Float prix) {
 		// TODO - implement AdministrateurSysteme.modificationVoyage
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param v
+	 */
+	public void verifierDisponibiliteVoyage(Voyage v) {
+		// TODO - implement AdministrateurSysteme.verifierDisponibiliteVoyage
 		throw new UnsupportedOperationException();
 	}
 

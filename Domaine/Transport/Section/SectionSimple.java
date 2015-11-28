@@ -13,7 +13,7 @@ public class SectionSimple implements ISection {
 		throw new UnsupportedOperationException();
 	}
 
-	public float getPrix() {
+	public Float getPrix() {
 		// TODO - implement SectionSimple.getPrix
 		throw new UnsupportedOperationException();
 	}
