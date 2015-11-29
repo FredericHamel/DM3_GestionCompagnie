@@ -1,6 +1,6 @@
 package Domaine.Voyages.Composants;
 
-public class CompagnieCroisiere extends Compagnie {
+public abstract class CompagnieCroisiere extends Compagnie {
 
 	/**
 	 * 

@@ -3,6 +3,7 @@ package Domaine.Voyages.Visiteur;
 import Domaine.Voyages.Composants.*;
 import Domaine.Transport.Section.*;
 import Domaine.Transport.Place.*;
+import java.util.*;
 
 public class VisiteurClient implements Visitor {
 
@@ -19,7 +20,7 @@ public class VisiteurClient implements Visitor {
 	 * 
 	 * @param d
 	 */
-	public String visit(Description d) {
+	public void visit(Description d) {
 		// TODO - implement VisiteurClient.visit
 		throw new UnsupportedOperationException();
 	}
@@ -73,7 +74,7 @@ public class VisiteurClient implements Visitor {
 		throw new UnsupportedOperationException();
 	}
 
-	public Collection<String> getResultats() {
+	public ArrayList<String> getResultats() {
 		// TODO - implement VisiteurClient.getResultats
 		throw new UnsupportedOperationException();
 	}

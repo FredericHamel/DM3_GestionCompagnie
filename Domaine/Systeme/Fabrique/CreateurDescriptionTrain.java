@@ -1,6 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class CreateurDescriptionTrain implements CreateurDescription {
 
@@ -22,7 +23,7 @@ public class CreateurDescriptionTrain implements CreateurDescription {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	public DescriptionTrain creerDescription(Compagnie co, List<Lieu> lieux, DayOfWeek jourDepart, Time duree) {
+	public DescriptionTrain creerDescription(Compagnie co, ArrayList<Lieu> lieux, String jourDepart, Date duree) {
 		// TODO - implement CreateurDescriptionTrain.creerDescription
 		throw new UnsupportedOperationException();
 	}

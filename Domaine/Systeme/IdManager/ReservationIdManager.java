@@ -1,10 +1,15 @@
 package Domaine.Systeme.IdManager;
 
-public class ReservationIdManager extends IdManager {
+public class ReservationIdManager{
+	
+	private ReservationIdManager instance = new ReservationIdManager();
 
 	public static ReservationIdManager getInstance() {
 		// TODO - implement ReservationIdManager.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new ReservationIdManager();
+		}
+		return instance;
 	}
 
 	public String generateID() {

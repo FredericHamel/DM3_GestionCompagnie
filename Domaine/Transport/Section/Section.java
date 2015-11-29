@@ -1,11 +1,16 @@
 package Domaine.Transport.Section;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
+import Domaine.Transport.Place.*;
+import Domaine.Transport.Disposition.*;
 
 public abstract class Section extends Composite {
 
+	protected Collection<Place> section;
+	protected Collection<Disposition> disposition;
 	protected char sigle;
-	protected Float prix;
+	protected float prix;
 
 	public String getSigle() {
 		// TODO - implement Section.getSigle
@@ -26,17 +31,17 @@ public abstract class Section extends Composite {
 	 * 
 	 * @param prix
 	 */
-	private void setPrix(Float prix) {
-		this.prix = prix;
+	private void setPrix(float prix) {
+		// TODO - implement Section.setPrix
+		throw new UnsupportedOperationException();
 	}
 
 	/**
 	 * 
 	 * @param v
 	 * @param uniqueID_C
-	 * @param numero
 	 */
-	public List<Object> accept(Visitor v, float uniqueID_C, ISection numero) {
+	public ArrayList<Object> accept(Visitor v, float uniqueID_C) {
 		// TODO - implement Section.accept
 		throw new UnsupportedOperationException();
 	}

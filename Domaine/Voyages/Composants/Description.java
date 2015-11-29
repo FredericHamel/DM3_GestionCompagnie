@@ -3,21 +3,22 @@ package Domaine.Voyages.Composants;
 import Domaine.Voyages.Visiteur.*;
 import java.util.*;
 import Domaine.Transport.Section.*;
+import java.util.Calendar;
 
 public abstract class Description extends Leaf implements IVisitable {
 
 	Collection<Voyage> voyage;
 	Collection<Lieu> lieux;
 	protected String numero;
-	protected DayOfWeek jourDepart;
-	protected Time duree;
+	protected String jourDepart;
+	protected Date duree;
 
 	/**
 	 * 
 	 * @param date
 	 * @param classe
 	 */
-	public List<Voyage> listerVoyages(Date date, Section classe) {
+	public ArrayList<Voyage> listerVoyages(Date date, Section classe) {
 		// TODO - implement Description.listerVoyages
 		throw new UnsupportedOperationException();
 	}
@@ -43,7 +44,7 @@ public abstract class Description extends Leaf implements IVisitable {
 	 * @param heureArrivee
 	 * @param uniqueID_V
 	 */
-	public String accept(Visitor v, Time heureDepart, String uniqueID_C, Time dateDepart, String numero, ISection prix, float heureArrivee, Date uniqueID_V) {
+	public void accept(Visitor v) {
 		// TODO - implement Description.accept
 		throw new UnsupportedOperationException();
 	}

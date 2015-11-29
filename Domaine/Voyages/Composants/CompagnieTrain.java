@@ -1,6 +1,7 @@
 package Domaine.Voyages.Composants;
+import java.util.*;
 
-public class CompagnieTrain extends Compagnie {
+public abstract class CompagnieTrain extends Compagnie {
 
 	/**
 	 * 
@@ -9,7 +10,7 @@ public class CompagnieTrain extends Compagnie {
 	 * @param prix
 	 * @param liste
 	 */
-	public void creerSection(String IDCompagnie, String IDVoyage, float prix, List<Integer> liste) {
+	public void creerSection(String IDCompagnie, String IDVoyage, float prix, ArrayList<Integer> liste) {
 		// TODO - implement CompagnieTrain.creerSection
 		throw new UnsupportedOperationException();
 	}

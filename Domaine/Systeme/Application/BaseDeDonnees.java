@@ -5,17 +5,17 @@ import Domaine.Systeme.Observateur.*;
 import java.util.*;
 import Domaine.Volet_Client.*;
 
-public class BaseDeDonnees extends Composite implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
+public class BaseDeDonnees implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
 
-	private Collection<Reservation> reservation;
-	private Collection<Compagnie> compagnie;
-	Collection<Voyage> voyage;
-	Collection<Description> description;
-	private Time etatClient;
-	private Time etatAdmin;
+	private ArrayList<Reservation> reservation;
+	private ArrayList<Compagnie> compagnie;
+	ArrayList<Voyage> voyage;
+	ArrayList<Description> description;
+	private Date etatClient;
+	private Date etatAdmin;
 	private static BaseDeDonnees instance;
 
-	public Time getStateClient() {
+	public Date getStateClient() {
 		// TODO - implement BaseDeDonnees.getStateClient
 		throw new UnsupportedOperationException();
 	}
@@ -42,7 +42,7 @@ public class BaseDeDonnees extends Composite implements ISujetBDDCoteClient, ISu
 		throw new UnsupportedOperationException();
 	}
 
-	public Time getStateAdmin() {
+	public Date getStateAdmin() {
 		// TODO - implement BaseDeDonnees.getStateAdmin
 		throw new UnsupportedOperationException();
 	}

@@ -2,7 +2,6 @@ package Domaine.Systeme.IdManager;
 
 public abstract class IdManager {
 
-	private static IdManager instance;
 	protected String lastID;
 
 	protected IdManager() {
@@ -10,9 +9,7 @@ public abstract class IdManager {
 		throw new UnsupportedOperationException();
 	}
 
-	public static IdManager getInstance() {
-		return this.instance;
-	}
+	public static IdManager getInstance() {}
 
 	public String generateID() {
 		// TODO - implement IdManager.generateID

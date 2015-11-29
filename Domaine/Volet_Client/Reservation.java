@@ -2,6 +2,7 @@ package Domaine.Volet_Client;
 
 import Domaine.Transport.Place.*;
 import Domaine.Transport.Section.*;
+import java.util.*;
 
 public class Reservation {
 
@@ -9,7 +10,7 @@ public class Reservation {
 	private String uniqueID;
 	private boolean confirme;
 	private Date dateAttribution;
-	private Time heureAttribution;
+	private Date heureAttribution;
 	private float tarifAssocie;
 	private Date dateD;
 
@@ -27,7 +28,7 @@ public class Reservation {
 	 * @param date
 	 * @param heure
 	 */
-	public void modifierReservation(Date date, Time heure) {
+	public void modifierReservation(Date date, Date heure) {
 		// TODO - implement Reservation.modifierReservation
 		throw new UnsupportedOperationException();
 	}

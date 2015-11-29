@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
-import Domaine.Transport.Section.*;
 
 public class CreateurDispositionLarge implements CreateurDisposition {
 
@@ -20,7 +19,7 @@ public class CreateurDispositionLarge implements CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	public DispositionLarge creerDisposition(ISection s) {
+	public DispositionLarge creerDisposition(int s) {
 		// TODO - implement CreateurDispositionLarge.creerDisposition
 		throw new UnsupportedOperationException();
 	}

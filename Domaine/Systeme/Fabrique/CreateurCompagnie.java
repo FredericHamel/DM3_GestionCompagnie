@@ -1,11 +1,11 @@
 package Domaine.Systeme.Fabrique;
 
-public abstract interface CreateurCompagnie {
+public interface CreateurCompagnie {
 
 	/**
 	 * 
 	 * @param nom
 	 */
-	Compagnie creerCompagnie(String nom);
+	public Compagnie creerCompagnie(String nom);
 
 }

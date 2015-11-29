@@ -1,10 +1,15 @@
 package Domaine.Systeme.IdManager;
 
-public class VoyageIdManager extends IdManager {
+public class VoyageIdManager{
 
+	private static VoyageIdManager instance = new VoyageIdManager();
+	
 	public static VoyageIdManager getInstance() {
 		// TODO - implement VoyageIdManager.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new VoyageIdManager();
+		}
+		return instance;
 	}
 
 	public String generateID() {

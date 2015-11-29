@@ -4,18 +4,19 @@ import Domaine.Voyages.Visiteur.*;
 import java.util.*;
 import Domaine.Transport.Section.*;
 import Domaine.Transport.Place.*;
+import java.util.Date;
 
 public abstract class Voyage extends Composite implements IVisitable {
 
-	protected Collection<ISection> section;
+	protected Collection<Section> section;
 	protected Collection<Place> aReserver;
 	protected LinkedList<Lieu> listeChaineeLieux;
 	protected String uniqueID_V;
 	protected Date dateDepart;
 	protected Date dateArrivee;
-	protected Time heureDepart;
-	protected Time heureArrivee;
-	protected Float prix;
+	protected Date heureDepart;
+	protected Date heureArrivee;
+	protected float prix;
 	protected boolean disponible;
 
 	public String getVoyageID() {
@@ -36,7 +37,7 @@ public abstract class Voyage extends Composite implements IVisitable {
 	 * 
 	 * @param classe
 	 */
-	public List<Place> listerPlacesLibres(Section classe) {
+	public ArrayList<Place> listerPlacesLibres(Section classe) {
 		// TODO - implement Voyage.listerPlacesLibres
 		throw new UnsupportedOperationException();
 	}
@@ -45,7 +46,7 @@ public abstract class Voyage extends Composite implements IVisitable {
 	 * 
 	 * @param classe
 	 */
-	public List<Place> listerPlacesTotales(ISection classe) {
+	public ArrayList<Place> listerPlacesTotales(Section classe) {
 		// TODO - implement Voyage.listerPlacesTotales
 		throw new UnsupportedOperationException();
 	}
@@ -60,7 +61,7 @@ public abstract class Voyage extends Composite implements IVisitable {
 	 * @param uniqueID_V
 	 * @param heureDepart
 	 */
-	public List<Object> accept(Visitor v, Time heureArrivee, ISection section, float prix, Date dateDepart, String uniqueID_V, Time heureDepart) {
+	public void accept(Visitor v) {
 		// TODO - implement Voyage.accept
 		throw new UnsupportedOperationException();
 	}

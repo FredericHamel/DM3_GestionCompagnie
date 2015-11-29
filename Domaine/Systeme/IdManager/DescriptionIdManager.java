@@ -4,7 +4,10 @@ public class DescriptionIdManager extends IdManager {
 
 	public static DescriptionIdManager getInstance() {
 		// TODO - implement DescriptionIdManager.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new DescriptionIdManager();
+		}
+		return instance;
 	}
 
 	public String generateID() {

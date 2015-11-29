@@ -3,10 +3,11 @@ package Domaine.Transport.Place;
 import Domaine.Voyages.Composants.*;
 import Domaine.Voyages.Visiteur.*;
 import Domaine.Transport.Section.*;
+import java.util.*;
 
 public abstract class Place extends Leaf implements IVisitable {
 
-	protected ISection place;
+	protected Section place;
 	protected String numero;
 
 	public void annuler() {
@@ -43,12 +44,12 @@ public abstract class Place extends Leaf implements IVisitable {
 	 * 
 	 * @param classe
 	 */
-	public List<Place> changerClasse(Section classe) {
+	public ArrayList<Place> changerClasse(Section classe) {
 		// TODO - implement Place.changerClasse
 		throw new UnsupportedOperationException();
 	}
 
-	public Float getPrix() {
+	public float getPrix() {
 		// TODO - implement Place.getPrix
 		throw new UnsupportedOperationException();
 	}
@@ -57,27 +58,10 @@ public abstract class Place extends Leaf implements IVisitable {
 	 * 
 	 * @param v
 	 */
-	public boolean accept(Visitor v) {
+	public void accept(Visitor v) {
 		// TODO - implement Place.accept
 		throw new UnsupportedOperationException();
 	}
 
-	/**
-	 * 
-	 * @param v
-	 * @param uniqueID_C
-	 * @param numero
-	 * @param uniqueID_V
-	 * @param dateDepart
-	 * @param heureDepart
-	 * @param heureArrivee
-	 * @param prix
-	 * @param sigle
-	 * @param parameter
-	 */
-	public String accept(Visitor v, String uniqueID_C, String numero, String uniqueID_V, Date dateDepart, Time heureDepart, Time heureArrivee, float prix, char sigle, float parameter) {
-		// TODO - implement Place.accept
-		throw new UnsupportedOperationException();
-	}
 
 }

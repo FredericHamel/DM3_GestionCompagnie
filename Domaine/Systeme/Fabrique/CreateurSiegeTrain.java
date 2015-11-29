@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Place.*;
-import Domaine.Transport.Section.*;
 
 public class CreateurSiegeTrain implements CreateurPlace {
 
@@ -20,7 +19,7 @@ public class CreateurSiegeTrain implements CreateurPlace {
 	 * 
 	 * @param s
 	 */
-	public SiegeTrain creerPlace(ISection s) {
+	public SiegeTrain creerPlace(int s) {
 		// TODO - implement CreateurSiegeTrain.creerPlace
 		throw new UnsupportedOperationException();
 	}

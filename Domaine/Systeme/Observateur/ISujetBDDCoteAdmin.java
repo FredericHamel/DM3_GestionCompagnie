@@ -2,22 +2,22 @@ package Domaine.Systeme.Observateur;
 
 import java.util.*;
 
-public abstract interface ISujetBDDCoteAdmin {
+public interface ISujetBDDCoteAdmin {
 
-	Collection<IObservateurBDDAdmin> getAdminObservateur();
-
-	/**
-	 * 
-	 * @param o
-	 */
-	void ajouterObservateurAdmin(IObservateurBDDAdmin o);
+	public ArrayList<IObservateurBDDAdmin> getAdminObservateur();
 
 	/**
 	 * 
 	 * @param o
 	 */
-	void supprimerObservateurAdmin(IObservateurBDDAdmin o);
+	public void ajouterObservateurAdmin(IObservateurBDDAdmin o);
 
-	void notifierAdmin();
+	/**
+	 * 
+	 * @param o
+	 */
+	public void supprimerObservateurAdmin(IObservateurBDDAdmin o);
+
+	public void notifierAdmin();
 
 }

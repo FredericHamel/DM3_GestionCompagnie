@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
-import Domaine.Transport.Section.*;
 
 public interface CreateurDisposition {
 
@@ -9,6 +8,6 @@ public interface CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	Disposition creerDisposition(ISection s);
+	Disposition creerDisposition(int s);
 
 }

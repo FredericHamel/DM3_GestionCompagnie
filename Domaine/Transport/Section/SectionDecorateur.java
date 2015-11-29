@@ -1,6 +1,6 @@
 package Domaine.Transport.Section;
 
-public abstract class SectionDecorateur implements ISection {
+public abstract class SectionDecorateur extends Section {
 
 	/**
 	 * 

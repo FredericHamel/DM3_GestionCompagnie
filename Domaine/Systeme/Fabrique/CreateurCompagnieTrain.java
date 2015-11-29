@@ -1,4 +1,5 @@
 package Domaine.Systeme.Fabrique;
+import java.util.*;
 
 public class CreateurCompagnieTrain implements CreateurCompagnie {
 
@@ -9,7 +10,7 @@ public class CreateurCompagnieTrain implements CreateurCompagnie {
 		throw new UnsupportedOperationException();
 	}
 
-	public static com.Administrateur.core.CreateurCompagnieTrain getInstance() {
+	public CreateurCompagnieTrain getInstance() {
 		// TODO - implement CreateurCompagnieTrain.getInstance
 		throw new UnsupportedOperationException();
 	}

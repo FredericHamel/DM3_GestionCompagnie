@@ -1,6 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class CreateurTrain {
 
@@ -24,7 +25,7 @@ public class CreateurTrain {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	public Train creerVoyage(Description d, Date c, Date dateDepart, Time dateArrivee, Time heureDepart, Float heureArrive) {
+	public Train creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive) {
 		// TODO - implement CreateurTrain.creerVoyage
 		throw new UnsupportedOperationException();
 	}

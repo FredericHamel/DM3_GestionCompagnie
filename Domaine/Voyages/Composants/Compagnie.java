@@ -3,10 +3,11 @@ package Domaine.Voyages.Composants;
 import Domaine.Voyages.Visiteur.*;
 import java.util.*;
 import Domaine.Transport.Section.*;
+import java.util.Date;
 
 public abstract class Compagnie extends Composite implements IVisitable {
 
-	private Collection<Description> description;
+	private ArrayList<Description> description;
 	protected String nom;
 	protected String uniqueID_C;
 
@@ -41,7 +42,7 @@ public abstract class Compagnie extends Composite implements IVisitable {
 	 * @param heureDepart
 	 * @param section
 	 */
-	public String accept(Visitor v, Time heureArrivee, Lieu depart, Lieu arrive, Time heureDepart, Section section) {
+	public String accept(Visitor v, Date heureArrivee, Lieu depart, Lieu arrive, Date heureDepart, Section section) {
 		// TODO - implement Compagnie.accept
 		throw new UnsupportedOperationException();
 	}
@@ -57,7 +58,7 @@ public abstract class Compagnie extends Composite implements IVisitable {
 	 * @param heureArrivee
 	 * @param prix
 	 */
-	public String accept(Visitor v, String uniqueID_C, String numero, Date uniqueID_V, Time dateDepart, Time heureDepart, float heureArrivee, ISection prix) {
+	public String accept(Visitor v, String uniqueID_C, String numero, Date uniqueID_V, Date dateDepart, Date heureDepart, float heureArrivee, Section prix) {
 		// TODO - implement Compagnie.accept
 		throw new UnsupportedOperationException();
 	}

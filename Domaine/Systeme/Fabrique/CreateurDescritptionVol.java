@@ -1,12 +1,13 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class CreateurDescritptionVol implements CreateurDescription {
 
 	private static CreateurDescritptionVol instance;
 
-	private com.Administrateur.croisiere.CreateurDescriptionVol CreateurDescriptionVol() {
+	private CreateurDescriptionVol CreateurDescriptionVol() {
 		// TODO - implement CreateurDescritptionVol.CreateurDescriptionVol
 		throw new UnsupportedOperationException();
 	}
@@ -22,7 +23,7 @@ public class CreateurDescritptionVol implements CreateurDescription {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	public DescriptionVol creerDescription(Compagnie co, List<Lieu> lieux, DayOfWeek jourDepart, Time duree) {
+	public DescriptionVol creerDescription(Compagnie co, ArrayList<Lieu> lieux, String jourDepart, Date duree) {
 		// TODO - implement CreateurDescritptionVol.creerDescription
 		throw new UnsupportedOperationException();
 	}

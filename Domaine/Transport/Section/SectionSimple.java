@@ -1,6 +1,7 @@
 package Domaine.Transport.Section;
+import java.util.*;
 
-public class SectionSimple implements ISection {
+public class SectionSimple extends Section {
 
 	private String sigle = "";
 
@@ -13,7 +14,7 @@ public class SectionSimple implements ISection {
 		throw new UnsupportedOperationException();
 	}
 
-	public Float getPrix() {
+	public float getPrix() {
 		// TODO - implement SectionSimple.getPrix
 		throw new UnsupportedOperationException();
 	}
@@ -24,7 +25,7 @@ public class SectionSimple implements ISection {
 	 * @param uniqueID_C
 	 * @param numero
 	 */
-	public List<Object> accept(int v, float uniqueID_C, ISection numero) {
+	public ArrayList<Object> accept(int v, float uniqueID_C, Section numero) {
 		// TODO - implement SectionSimple.accept
 		throw new UnsupportedOperationException();
 	}

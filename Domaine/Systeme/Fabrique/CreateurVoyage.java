@@ -1,6 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public interface CreateurVoyage {
 
@@ -13,6 +14,6 @@ public interface CreateurVoyage {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	Voyage creerVoyage(Description d, Date c, Date dateDepart, Time dateArrivee, Time heureDepart, Float heureArrive);
+	Voyage creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive);
 
 }

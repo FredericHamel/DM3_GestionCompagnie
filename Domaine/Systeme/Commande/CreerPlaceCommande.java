@@ -1,11 +1,10 @@
 package Domaine.Systeme.Commande;
 
-import Domaine.Transport.Section.*;
 import Domaine.Systeme.Fabrique.*;
 
 public class CreerPlaceCommande extends CreerCommande {
 
-	private ISection s;
+	private Section s;
 	private CreateurPlace c;
 
 	/**
@@ -13,7 +12,7 @@ public class CreerPlaceCommande extends CreerCommande {
 	 * @param s
 	 * @param c
 	 */
-	public void execute(ISection s, CreateurPlace c) {
+	public void execute(Section s, CreateurPlace c) {
 		// TODO - implement CreerPlaceCommande.execute
 		throw new UnsupportedOperationException();
 	}
@@ -29,7 +28,7 @@ public class CreerPlaceCommande extends CreerCommande {
 	 * @param c
 	 * @param s
 	 */
-	public CreerPlaceCommande CreerPlaceCommande(AdministrateurSysteme admin, CreateurPlaceCommande c, ISection s) {
+	public CreerPlaceCommande CreerPlaceCommande(AdministrateurSysteme admin, CreateurPlaceCommande c, Section s) {
 		// TODO - implement CreerPlaceCommande.CreerPlaceCommande
 		throw new UnsupportedOperationException();
 	}

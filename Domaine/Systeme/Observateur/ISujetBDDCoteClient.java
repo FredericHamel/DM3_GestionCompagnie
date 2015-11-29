@@ -2,22 +2,21 @@ package Domaine.Systeme.Observateur;
 
 import java.util.*;
 
-public abstract interface ISujetBDDCoteClient {
+public interface ISujetBDDCoteClient {
 
-	Collection<IObservateurBDDClient> getClientObservateur();
-
-	/**
-	 * 
-	 * @param o
-	 */
-	void ajouterObservateurClient(IObservateurBDDClient o);
+	public ArrayList<IObservateurBDDClient> getClientObservateur();
 
 	/**
 	 * 
 	 * @param o
 	 */
-	void supprimerObservateurClient(IObservateurBDDClient o);
+	public void ajouterObservateurClient(IObservateurBDDClient o);
 
-	void notifierClient();
+	/**
+	 * 
+	 * @param o
+	 */
+	public void supprimerObservateurClient(IObservateurBDDClient o);
+	public void notifierClient();
 
 }

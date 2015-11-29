@@ -25,7 +25,7 @@ public class CreateurCroisiere {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	public Croisiere creerVoyage(Description d, Date c, Date dateDepart, Time dateArrivee, Time heureDepart, Float heureArrive) {
+	public Croisiere creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive) {
 		// TODO - implement CreateurCroisiere.creerVoyage
 		throw new UnsupportedOperationException();
 	}

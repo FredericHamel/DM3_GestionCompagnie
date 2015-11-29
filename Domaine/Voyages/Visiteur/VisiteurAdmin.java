@@ -3,6 +3,7 @@ package Domaine.Voyages.Visiteur;
 import Domaine.Voyages.Composants.*;
 import Domaine.Transport.Section.*;
 import Domaine.Transport.Place.*;
+import java.util.*;
 
 public class VisiteurAdmin implements Visitor {
 
@@ -72,7 +73,7 @@ public class VisiteurAdmin implements Visitor {
 		throw new UnsupportedOperationException();
 	}
 
-	public Collection<String> getResultats() {
+	public ArrayList<String> getResultats() {
 		// TODO - implement VisiteurAdmin.getResultats
 		throw new UnsupportedOperationException();
 	}

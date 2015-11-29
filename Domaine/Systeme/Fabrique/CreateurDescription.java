@@ -1,8 +1,9 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
-public abstract interface CreateurDescription {
+public interface CreateurDescription {
 
 	/**
 	 * 
@@ -11,6 +12,6 @@ public abstract interface CreateurDescription {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	Description creerDescription(Compagnie co, List<Lieu> lieux, DayOfWeek jourDepart, Time duree);
+	public Description creerDescription(Compagnie co, ArrayList<Lieu> lieux, String jourDepart, Date duree);
 
 }

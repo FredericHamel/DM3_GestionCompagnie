@@ -6,6 +6,7 @@ import Domaine.Systeme.Fabrique.*;
 import Domaine.Transport.Section.*;
 import Domaine.Transport.Disposition.*;
 import Domaine.Transport.Place.*;
+import java.util.*;
 
 public class AdministrateurSysteme implements IObservateurBDDAdmin {
 
@@ -32,7 +33,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param heureArrive
 	 * @param prix
 	 */
-	public void creerVoyage(Voyage v, CreateurSection c, Date dateDepart, Date dateArrivee, Time heureDepart, Time heureArrive, Float prix) {
+	public void creerVoyage(Voyage v, CreateurSection c, Date dateDepart, Date dateArrivee, Date heureDepart, Date heureArrive, float prix) {
 		// TODO - implement AdministrateurSysteme.creerVoyage
 		throw new UnsupportedOperationException();
 	}
@@ -43,7 +44,10 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	}
 
 	public static AdministrateurSysteme getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new AdministrateurSysteme();
+		}
+		return instance;
 	}
 
 	/**
@@ -75,7 +79,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	public Description creerDescription(Compagnie co, CreateurDescription c, List<Lieu> lieux, DayOfWeek jourDepart, Time duree) {
+	public Description creerDescription(Compagnie co, CreateurDescription c, List<Lieu> lieux, String jourDepart, Date duree) {
 		// TODO - implement AdministrateurSysteme.creerDescription
 		throw new UnsupportedOperationException();
 	}
@@ -90,7 +94,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param heureArrive
 	 * @param prix
 	 */
-	public Voyage creerVoyage(Description d, CreateurSection c, Date dateDepart, Date dateArrivee, Time heureDepart, Time heureArrive, Float prix) {
+	public Voyage creerVoyage(Description d, CreateurSection c, Date dateDepart, Date dateArrivee, Date heureDepart, Date heureArrive, float prix) {
 		// TODO - implement AdministrateurSysteme.creerVoyage
 		throw new UnsupportedOperationException();
 	}
@@ -111,7 +115,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param s
 	 * @param c
 	 */
-	public Disposition creerDisposition(ISection s, CreateurDisposition c) {
+	public Disposition creerDisposition(Section s, CreateurDisposition c) {
 		// TODO - implement AdministrateurSysteme.creerDisposition
 		throw new UnsupportedOperationException();
 	}
@@ -121,7 +125,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param s
 	 * @param c
 	 */
-	public Place creerPlace(ISection s, CreateurPlace c) {
+	public Place creerPlace(Section s, CreateurPlace c) {
 		// TODO - implement AdministrateurSysteme.creerPlace
 		throw new UnsupportedOperationException();
 	}
@@ -156,6 +160,15 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 
 	/**
 	 * 
+	 * @param v
+	 */
+	public void verifierDisponibiliteVoyage(Voyage v) {
+		// TODO - implement AdministrateurSysteme.verifierDisponibiliteVoyage
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
 	 * @param IDCompagnie
 	 * @param IDVoyage
 	 * @param prix
@@ -171,7 +184,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param v
 	 * @param nPrix
 	 */
-	public void changerPrix(Voyage v, Float nPrix) {
+	public void changerPrix(Voyage v, float nPrix) {
 		// TODO - implement AdministrateurSysteme.changerPrix
 		throw new UnsupportedOperationException();
 	}
@@ -222,7 +235,7 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	public void modificationDescription(Description d, List<Lieu> lieux, DayOfWeek jourDepart, Time duree) {
+	public void modificationDescription(Description d, List<Lieu> lieux, String jourDepart, Date duree) {
 		// TODO - implement AdministrateurSysteme.modificationDescription
 		throw new UnsupportedOperationException();
 	}
@@ -236,17 +249,8 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param heureArrive
 	 * @param prix
 	 */
-	public void modificationVoyage(Voyage v, Date dateDepart, Date dateArrivee, Time heureDepart, Time heureArrive, Float prix) {
+	public void modificationVoyage(Voyage v, Date dateDepart, Date dateArrivee, Date heureDepart, Date heureArrive, float prix) {
 		// TODO - implement AdministrateurSysteme.modificationVoyage
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param v
-	 */
-	public void verifierDisponibiliteVoyage(Voyage v) {
-		// TODO - implement AdministrateurSysteme.verifierDisponibiliteVoyage
 		throw new UnsupportedOperationException();
 	}
 

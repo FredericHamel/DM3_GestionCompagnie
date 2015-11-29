@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
-import Domaine.Transport.Section.*;
 
 public class CreateurDispositionMoyen implements CreateurDisposition {
 
@@ -20,7 +19,7 @@ public class CreateurDispositionMoyen implements CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	public DispositionMoyen creerDisposition(ISection s) {
+	public DispositionMoyen creerDisposition(int s) {
 		// TODO - implement CreateurDispositionMoyen.creerDisposition
 		throw new UnsupportedOperationException();
 	}

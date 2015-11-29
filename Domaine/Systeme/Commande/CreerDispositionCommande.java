@@ -1,6 +1,5 @@
 package Domaine.Systeme.Commande;
 
-import Domaine.Transport.Section.*;
 import Domaine.Systeme.Fabrique.*;
 
 public class CreerDispositionCommande extends CreerCommande {

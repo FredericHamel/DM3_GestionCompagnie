@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
-import Domaine.Transport.Section.*;
 
 public class CreateurDispositionEtroit implements CreateurDisposition {
 
@@ -21,7 +20,7 @@ public class CreateurDispositionEtroit implements CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	public DispositionEtroit creerDisposition(ISection s) {
+	public DispositionEtroit creerDisposition(int s) {
 		// TODO - implement CreateurDispositionEtroit.creerDisposition
 		throw new UnsupportedOperationException();
 	}

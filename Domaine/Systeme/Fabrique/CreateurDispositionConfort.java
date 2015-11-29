@@ -1,7 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
-import Domaine.Transport.Section.*;
 
 public class CreateurDispositionConfort implements CreateurDisposition {
 
@@ -20,7 +19,7 @@ public class CreateurDispositionConfort implements CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	public DispositionConfort creerDisposition(ISection s) {
+	public DispositionConfort creerDisposition(int s) {
 		// TODO - implement CreateurDispositionConfort.creerDisposition
 		throw new UnsupportedOperationException();
 	}

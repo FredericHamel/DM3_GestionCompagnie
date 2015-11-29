@@ -1,7 +1,8 @@
 package Domaine.Voyages.Composants;
 
 import Domaine.Voyages.Visiteur.*;
-import Domaine.Transport.Section.*;
+import java.util.*;
+import java.util.Calendar;
 
 public abstract class Lieu extends Leaf implements IVisitable {
 
@@ -28,7 +29,7 @@ public abstract class Lieu extends Leaf implements IVisitable {
 	 * @param prix
 	 * @param section
 	 */
-	public String accept(Visitor v, String uniqueID_V, Date dateDepart, Time heureDepart, Time heureArrivee, float prix, ISection section) {
+	public String accept(Visitor v, String uniqueID_V, Date dateDepart, Date heureDepart, Date heureArrivee, float prix, Section section) {
 		// TODO - implement Lieu.accept
 		throw new UnsupportedOperationException();
 	}

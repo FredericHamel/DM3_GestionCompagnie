@@ -1,7 +1,7 @@
 package Domaine.Systeme.Observateur;
 
-public abstract interface IObservateurBDDClient {
+public interface IObservateurBDDClient {
 
-	void mettreAJour();
+	public void mettreAJour();
 
 }

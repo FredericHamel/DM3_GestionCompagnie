@@ -1,6 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class CreateurVol {
 
@@ -11,7 +12,7 @@ public class CreateurVol {
 		throw new UnsupportedOperationException();
 	}
 
-	public static CreateurCroisiere getInstance() {
+	public static CreateurVol getInstance() {
 		// TODO - implement CreateurVol.getInstance
 		throw new UnsupportedOperationException();
 	}
@@ -25,7 +26,7 @@ public class CreateurVol {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	public Vol creerVoyage(Description d, Date c, Date dateDepart, Time dateArrivee, Time heureDepart, Float heureArrive) {
+	public Vol creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Dates heureDepart, float heureArrive) {
 		// TODO - implement CreateurVol.creerVoyage
 		throw new UnsupportedOperationException();
 	}

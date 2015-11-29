@@ -1,4 +1,5 @@
 package Domaine.Voyages.Visiteur;
+import java.util.*;
 
 public class StructureDeDonnees {
 
@@ -7,10 +8,10 @@ public class StructureDeDonnees {
 	private String numero;
 	private String uniqueID_V;
 	private Date dateDepart;
-	private Time heureDepart;
-	private Time heureArrivee;
+	private Date heureDepart;
+	private Date heureArrivee;
 	private float prix;
-	private Section3 section;
+	private Section section;
 
 	/**
 	 * 

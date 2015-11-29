@@ -9,7 +9,7 @@ public class CreateurCompagnieCroisiere implements CreateurCompagnie {
 		throw new UnsupportedOperationException();
 	}
 
-	public static com.Administrateur.core.CreateurCompagnieCroisiere getInstance() {
+	public static CreateurCompagnieCroisiere getInstance() {
 		// TODO - implement CreateurCompagnieCroisiere.getInstance
 		throw new UnsupportedOperationException();
 	}

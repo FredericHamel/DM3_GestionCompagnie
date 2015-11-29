@@ -4,6 +4,8 @@ import Domaine.Systeme.Observateur.*;
 import Domaine.Voyages.Composants.*;
 import Domaine.Transport.Place.*;
 import Domaine.Transport.Section.*;
+import java.util.Date;
+import java.util.*;
 
 public class SystemeReservationGeneralise implements IObservateurBDDClient {
 
@@ -11,7 +13,10 @@ public class SystemeReservationGeneralise implements IObservateurBDDClient {
 	private static SystemeReservationGeneralise instance;
 
 	public static SystemeReservationGeneralise getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new SystemeReservationGeneralise();
+		}
+		return instance;
 	}
 
 	/**

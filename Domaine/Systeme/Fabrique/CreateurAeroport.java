@@ -9,7 +9,7 @@ public class CreateurAeroport implements CreateurLieu {
 		throw new UnsupportedOperationException();
 	}
 
-	public static Lieu getInstance() {
+	public static CreateurAeroport getInstance() {
 		// TODO - implement CreateurAeroport.getInstance
 		throw new UnsupportedOperationException();
 	}
@@ -19,7 +19,7 @@ public class CreateurAeroport implements CreateurLieu {
 	 * @param nom
 	 * @param ville
 	 */
-	public Aeroport creerLieu(String nom, String ville) {
+	public void creerLieu(String nom, String ville) {
 		// TODO - implement CreateurAeroport.creerLieu
 		throw new UnsupportedOperationException();
 	}
