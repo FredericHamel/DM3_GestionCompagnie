@@ -1,7 +1,7 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
-public class CreateurGare {
+public class CreateurGare implements CreateurLieu{
 
 	private static CreateurGare instance;
 

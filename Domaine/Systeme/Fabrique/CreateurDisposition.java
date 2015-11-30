@@ -8,6 +8,6 @@ public interface CreateurDisposition {
 	 * 
 	 * @param s
 	 */
-	Disposition creerDisposition(int s);
+	public Disposition creerDisposition(int s);
 
 }

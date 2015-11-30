@@ -8,6 +8,6 @@ public interface CreateurPlace {
 	 * 
 	 * @param s
 	 */
-	Place creerPlace(int s);
+	public Place creerPlace(int s);
 
 }

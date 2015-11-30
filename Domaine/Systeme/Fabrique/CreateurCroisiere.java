@@ -3,7 +3,7 @@ package Domaine.Systeme.Fabrique;
 import Domaine.Voyages.Composants.*;
 import java.util.*;
 
-public class CreateurCroisiere {
+public class CreateurCroisiere implements CreateurVoyage {
 
 	private static CreateurCroisiere instance;
 

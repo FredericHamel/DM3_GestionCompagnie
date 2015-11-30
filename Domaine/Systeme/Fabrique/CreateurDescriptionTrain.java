@@ -3,7 +3,7 @@ package Domaine.Systeme.Fabrique;
 import Domaine.Voyages.Composants.*;
 import java.util.*;
 
-public class CreateurDescriptionTrain{
+public class CreateurDescriptionTrain implements CreateurDescription{
 
 	private static CreateurDescriptionTrain instance;
 

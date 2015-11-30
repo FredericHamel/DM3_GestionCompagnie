@@ -14,6 +14,6 @@ public interface CreateurVoyage {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	Voyage creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive);
+	public Voyage creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive);
 
 }

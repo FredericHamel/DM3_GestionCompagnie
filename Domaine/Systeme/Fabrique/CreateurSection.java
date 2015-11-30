@@ -10,6 +10,6 @@ public interface CreateurSection {
 	 * @param v
 	 * @param sd
 	 */
-	SectionSimple creerSection(Voyage v, SectionDecorateur sd);
+	public SectionSimple creerSection(Voyage v, SectionDecorateur sd);
 
 }

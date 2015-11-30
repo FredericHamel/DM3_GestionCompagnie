@@ -2,7 +2,7 @@ package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Place.*;
 
-public class CreateurCabine {
+public class CreateurCabine implements CreateurPlace{
 
 	private static CreateurCabine instance = new CreateurCabine();
 

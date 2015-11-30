@@ -3,7 +3,7 @@ package Domaine.Systeme.Fabrique;
 import Domaine.Transport.Section.*;
 import Domaine.Voyages.Composants.*;
 
-public class CreateurSectionDecoree{
+public class CreateurSectionDecoree implements CreateurSection{
 
 	private static CreateurSectionDecoree instance;
 

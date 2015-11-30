@@ -2,7 +2,7 @@ package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
 
-public class CreateurDispositionMoyen{
+public class CreateurDispositionMoyen implements CreateurDisposition{
 
 	private static CreateurDispositionMoyen instance;
 

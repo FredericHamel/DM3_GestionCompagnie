@@ -1,6 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
-public class CreateurCompagnieAerienne{
+public class CreateurCompagnieAerienne implements CreateurCompagnie{
 
 	private static CreateurCompagnieAerienne instance;
 

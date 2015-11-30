@@ -1,7 +1,7 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
-public class CreateurPort {
+public class CreateurPort implements CreateurLieu {
 
 	private static CreateurPort instance;
 

@@ -1,7 +1,7 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
-public class CreateurCompagnieTrain {
+public class CreateurCompagnieTrain implements CreateurCompagnie{
 
 	private static CreateurCompagnieTrain instance;
 
