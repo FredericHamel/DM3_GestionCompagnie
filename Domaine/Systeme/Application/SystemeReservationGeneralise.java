@@ -100,5 +100,9 @@ public class SystemeReservationGeneralise implements IObservateurBDDClient {
 		// TODO - implement SystemeReservationGeneralise.rafraichirAffichage
 		throw new UnsupportedOperationException();
 	}
+	
+	public void mettreAJour(){
+		
+	}
 
 }

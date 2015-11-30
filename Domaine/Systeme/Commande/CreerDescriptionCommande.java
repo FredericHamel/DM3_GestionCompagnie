@@ -2,13 +2,14 @@ package Domaine.Systeme.Commande;
 
 import Domaine.Voyages.Composants.*;
 import Domaine.Systeme.Fabrique.*;
+import java.util.*;
 
 public class CreerDescriptionCommande extends CreerCommande {
 
 	private Compagnie co;
-	private DayofWeek jourDepart;
+	private String jourDepart;
 	private Time duree;
-	private Liste<Lieu> lieux;
+	private ArrayList<Lieu> lieux;
 	private CreateurDescription c;
 
 	public void execute() {
@@ -30,7 +31,7 @@ public class CreerDescriptionCommande extends CreerCommande {
 	 * @param duree
 	 * @param lieux
 	 */
-	public CreerDescriptionCommande CreerDescriptionCommande(AdministrateurSysteme admin, CreateurDescription c, Compagnie co, DayOfWeek jourDepart, Time duree, List<Lieu> lieux) {
+	public CreerDescriptionCommande CreerDescriptionCommande(AdministrateurSysteme admin, CreateurDescription c, Compagnie co, String jourDepart, Date duree, ArrayList<Lieu> lieux) {
 		// TODO - implement CreerDescriptionCommande.CreerDescriptionCommande
 		throw new UnsupportedOperationException();
 	}

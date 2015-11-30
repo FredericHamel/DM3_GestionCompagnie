@@ -26,7 +26,7 @@ public class CreateurVol {
 	 * @param heureDepart
 	 * @param heureArrive
 	 */
-	public Vol creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Dates heureDepart, float heureArrive) {
+	public Vol creerVoyage(Description d, Date c, Date dateDepart, Date dateArrivee, Date heureDepart, float heureArrive) {
 		// TODO - implement CreateurVol.creerVoyage
 		throw new UnsupportedOperationException();
 	}

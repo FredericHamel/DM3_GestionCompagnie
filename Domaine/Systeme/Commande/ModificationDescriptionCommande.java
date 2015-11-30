@@ -1,12 +1,13 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class ModificationDescriptionCommande extends ModificationCommande {
 
 	private Description d;
 	private List<Lieu> lieux;
-	private DayOfWeek jourDepart;
+	private String jourDepart;
 	private Time duree;
 
 	public void execute() {
@@ -27,7 +28,7 @@ public class ModificationDescriptionCommande extends ModificationCommande {
 	 * @param jourDepart
 	 * @param duree
 	 */
-	public ModificationDescriptionCommande ModificationDescriptionCommande(AdministrateurSysteme admin, Description d, List<Lieu> lieux, DayOfWeek jourDepart, Time duree) {
+	public ModificationDescriptionCommande ModificationDescriptionCommande(AdministrateurSysteme admin, Description d, ArrayList<Lieu> lieux, String jourDepart, Date duree) {
 		// TODO - implement ModificationDescriptionCommande.ModificationDescriptionCommande
 		throw new UnsupportedOperationException();
 	}

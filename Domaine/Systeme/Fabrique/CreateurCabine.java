@@ -2,13 +2,15 @@ package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Place.*;
 
-public class CreateurCabine implements CreateurPlace {
+public class CreateurCabine {
 
-	private static CreateurCabine instance;
+	private static CreateurCabine instance = new CreateurCabine();
 
 	private CreateurCabine CreateurCabine() {
-		// TODO - implement CreateurCabine.CreateurCabine
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new CreateurCabine();
+		}
+		return instance;
 	}
 
 	public static CreateurCabine getInstance() {

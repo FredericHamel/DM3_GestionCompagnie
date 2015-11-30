@@ -13,7 +13,7 @@ public class BaseDeDonnees implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
 	ArrayList<Description> description;
 	private Date etatClient;
 	private Date etatAdmin;
-	private static BaseDeDonnees instance;
+	private static BaseDeDonnees instance = new BaseDeDonnees();
 
 	public Date getStateClient() {
 		// TODO - implement BaseDeDonnees.getStateClient
@@ -30,7 +30,10 @@ public class BaseDeDonnees implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
 	}
 
 	public static BaseDeDonnees getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new BaseDeDonnees();
+		}
+		return instance;
 	}
 
 	/**
@@ -46,5 +49,38 @@ public class BaseDeDonnees implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
 		// TODO - implement BaseDeDonnees.getStateAdmin
 		throw new UnsupportedOperationException();
 	}
-
+	
+	public void notifierClient(){
+		
+	}
+	
+	public void notifierAdmin(){
+		
+	}
+	
+	public void  ajouterObservateurClient(IObservateurBDDClient o ){
+		
+	}
+	
+	public void ajouterObservateurAdmin(IObservateurBDDAdmin o ){
+		
+	}
+	
+	
+	public void supprimerObservateurClient(IObservateurBDDClient o){
+		
+	}
+	
+	public void supprimerObservateurAdmin(IObservateurBDDAdmin o ){
+		
+	}
+	
+	public ArrayList<IObservateurBDDAdmin> getAdminObservateur(){
+		
+		
+	}
+	
+	public ArrayList<IObservateurBDDClient> getClientObservateur(){
+		
+	}
 }

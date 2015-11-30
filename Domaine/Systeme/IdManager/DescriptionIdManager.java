@@ -2,6 +2,8 @@ package Domaine.Systeme.IdManager;
 
 public class DescriptionIdManager extends IdManager {
 
+	private static DescriptionIdManager instance = new DescriptionIdManager();
+	
 	public static DescriptionIdManager getInstance() {
 		// TODO - implement DescriptionIdManager.getInstance
 		if(instance == null){

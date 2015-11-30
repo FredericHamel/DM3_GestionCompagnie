@@ -2,7 +2,7 @@ package Domaine.Systeme.Fabrique;
 
 import Domaine.Transport.Disposition.*;
 
-public class CreateurDispositionMoyen implements CreateurDisposition {
+public class CreateurDispositionMoyen{
 
 	private static CreateurDispositionMoyen instance;
 
@@ -12,7 +12,10 @@ public class CreateurDispositionMoyen implements CreateurDisposition {
 	}
 
 	public static CreateurDispositionMoyen getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new CreateurDispositionMoyen();
+		}
+		return instance;
 	}
 
 	/**

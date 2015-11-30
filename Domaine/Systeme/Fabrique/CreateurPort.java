@@ -1,7 +1,7 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
-public class CreateurPort implements CreateurLieu {
+public class CreateurPort {
 
 	private static CreateurPort instance;
 
@@ -11,7 +11,10 @@ public class CreateurPort implements CreateurLieu {
 	}
 
 	public static CreateurPort getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new CreateurPort();
+		}
+		return instance;
 	}
 
 	/**

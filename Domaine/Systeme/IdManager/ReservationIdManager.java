@@ -2,7 +2,7 @@ package Domaine.Systeme.IdManager;
 
 public class ReservationIdManager{
 	
-	private ReservationIdManager instance = new ReservationIdManager();
+	private static ReservationIdManager instance = new ReservationIdManager();
 
 	public static ReservationIdManager getInstance() {
 		// TODO - implement ReservationIdManager.getInstance

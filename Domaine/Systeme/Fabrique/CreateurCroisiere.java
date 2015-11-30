@@ -1,6 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.*;
+import java.util.*;
 
 public class CreateurCroisiere {
 

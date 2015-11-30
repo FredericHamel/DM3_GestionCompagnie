@@ -1,7 +1,7 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
-public class CreateurCompagnieTrain implements CreateurCompagnie {
+public class CreateurCompagnieTrain {
 
 	private static CreateurCompagnieTrain instance;
 
@@ -11,8 +11,10 @@ public class CreateurCompagnieTrain implements CreateurCompagnie {
 	}
 
 	public CreateurCompagnieTrain getInstance() {
-		// TODO - implement CreateurCompagnieTrain.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new CreateurCompagnieTrain();
+		}
+		return instance;
 	}
 
 	/**

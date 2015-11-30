@@ -3,7 +3,7 @@ package Domaine.Systeme.Fabrique;
 import Domaine.Voyages.Composants.*;
 import java.util.*;
 
-public class CreateurDescriptionCroisiere implements CreateurDescription {
+public class CreateurDescriptionCroisiere{
 
 	private static CreateurDescriptionCroisiere instance;
 
@@ -13,7 +13,10 @@ public class CreateurDescriptionCroisiere implements CreateurDescription {
 	}
 
 	public static CreateurDescriptionCroisiere getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new CreateurDescriptionCroisiere();
+		}
+		return instance;
 	}
 
 	/**

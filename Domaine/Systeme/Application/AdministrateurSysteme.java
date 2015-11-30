@@ -253,5 +253,8 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 		// TODO - implement AdministrateurSysteme.modificationVoyage
 		throw new UnsupportedOperationException();
 	}
-
+	
+	public void mettreAJour(){
+		
+	}
 }

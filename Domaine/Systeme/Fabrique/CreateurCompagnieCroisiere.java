@@ -1,6 +1,6 @@
 package Domaine.Systeme.Fabrique;
 
-public class CreateurCompagnieCroisiere implements CreateurCompagnie {
+public class CreateurCompagnieCroisiere{
 
 	private static CreateurCompagnieCroisiere instance;
 
@@ -10,8 +10,10 @@ public class CreateurCompagnieCroisiere implements CreateurCompagnie {
 	}
 
 	public static CreateurCompagnieCroisiere getInstance() {
-		// TODO - implement CreateurCompagnieCroisiere.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new CreateurCompagnieCroisiere();
+		}
+		return instance;
 	}
 
 	/**

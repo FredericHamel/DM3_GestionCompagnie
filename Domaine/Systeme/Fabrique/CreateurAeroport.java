@@ -2,7 +2,7 @@ package Domaine.Systeme.Fabrique;
 
 public class CreateurAeroport implements CreateurLieu {
 
-	private static CreateurAeroport instance;
+	private static CreateurAeroport instance = new CreateurAeroport();
 
 	private CreateurAeroport CreateurAeroport() {
 		// TODO - implement CreateurAeroport.CreateurAeroport
@@ -10,8 +10,10 @@ public class CreateurAeroport implements CreateurLieu {
 	}
 
 	public static CreateurAeroport getInstance() {
-		// TODO - implement CreateurAeroport.getInstance
-		throw new UnsupportedOperationException();
+		if(instance == null){
+			instance = new CreateurAeroport();
+		}
+		return instance;
 	}
 
 	/**

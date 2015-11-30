@@ -3,7 +3,7 @@ package Domaine.Systeme.Fabrique;
 import Domaine.Voyages.Composants.*;
 import java.util.*;
 
-public class CreateurDescritptionVol implements CreateurDescription {
+public class CreateurDescritptionVol{
 
 	private static CreateurDescritptionVol instance;
 
@@ -12,8 +12,11 @@ public class CreateurDescritptionVol implements CreateurDescription {
 		throw new UnsupportedOperationException();
 	}
 
-	public static CreateurDescritptionVol getInstance() {
-		return this.instance;
+	public static CreateurDescriptionVol getInstance() {
+		if(instance == null){
+			instance = new CreateurDescritptionVol();
+		}
+		return instance;
 	}
 
 	/**

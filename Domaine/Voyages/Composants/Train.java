@@ -2,6 +2,7 @@ package Domaine.Voyages.Composants;
 
 import Domaine.Transport.Place.*;
 import Domaine.Transport.Section.*;
+import java.util.*;
 
 public class Train extends Voyage {
 
@@ -9,7 +10,7 @@ public class Train extends Voyage {
 	 * 
 	 * @param classe
 	 */
-	public List<SiegeTrain> listerPlacesLibres(Section classe) {
+	public ArrayList<SiegeTrain> listerPlacesLibres(Section classe) {
 		// TODO - implement Train.listerPlacesLibres
 		throw new UnsupportedOperationException();
 	}

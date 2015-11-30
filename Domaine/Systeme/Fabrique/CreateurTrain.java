@@ -13,7 +13,10 @@ public class CreateurTrain {
 	}
 
 	public static CreateurTrain getInstance() {
-		return this.instance;
+		if(instance == null){
+			instance = new CreateurTrain();
+		}
+		return instance;
 	}
 
 	/**

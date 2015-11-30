@@ -6,10 +6,10 @@ import Domaine.Systeme.Fabrique.*;
 public class CreerVoyageCommande extends CreerCommande {
 
 	private Date dateArrivee;
-	private Time heureDepart;
+	private Date heureDepart;
 	private Date dateDepart;
 	private Description d;
-	private Float prix;
+	private float prix;
 	private CreateurVoyage c;
 
 	public void execute() {
@@ -33,7 +33,7 @@ public class CreerVoyageCommande extends CreerCommande {
 	 * @param c
 	 * @param prix
 	 */
-	public CreerVoyageCommande CreerVoyageCommande(AdministrateurSysteme admin, Date dateArrivee, Time heureDepart, Time heureArrive, Date dateDepart, Description d, CreateurSection c, Float prix) {
+	public CreerVoyageCommande CreerVoyageCommande(AdministrateurSysteme admin, Date dateArrivee, Date heureDepart, Date heureArrive, Date dateDepart, Description d, CreateurSection c, float prix) {
 		// TODO - implement CreerVoyageCommande.CreerVoyageCommande
 		throw new UnsupportedOperationException();
 	}
