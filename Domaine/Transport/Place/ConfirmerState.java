@@ -6,9 +6,8 @@ public class ConfirmerState extends PlaceState {
 	 * 
 	 * @param p
 	 */
-	public void ConfimerState(Place p) {
-		// TODO - implement ConfirmerState.ConfimerState
-		throw new UnsupportedOperationException();
+	public ConfirmerState(Place p) {
+        super(p);
 	}
 
 	public void reserver() {

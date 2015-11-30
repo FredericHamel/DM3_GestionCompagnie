@@ -9,31 +9,47 @@ public abstract class Place extends Leaf implements IVisitable {
 
 	protected Section place;
 	protected String numero;
+    
+    public final PlaceState DISPONIBLE_STATE;
+    public final PlaceState RESERVER_STATE;
+    public final PlaceState CONFIRMER_STATE;
+
+    private PlaceState curentState;
+
+    protected Place(String numero, Section place) {
+        DISPONIBLE_STATE = new DisponibleState(this);
+        RESERVER_STATE = new ReserverState(this);
+        CONFIRMER_STATE = new ConfirmerState(this);
+
+        setCurrentState(DISPONIBLE_STATE);
+        this.numero = numero;
+        this.place = place;
+    }
+
+    void setCurrentState(PlaceState state)
+    {
+        this.curentState = state;
+    }
 
 	public void annuler() {
-		// TODO - implement Place.annuler
-		throw new UnsupportedOperationException();
+		curentState.annuler();
 	}
 
 	public void confirmer() {
-		// TODO - implement Place.confirmer
-		throw new UnsupportedOperationException();
-	}
+	    curentState.confirmer();
+    }
 
 	public void reserver() {
-		// TODO - implement Place.reserver
-		throw new UnsupportedOperationException();
-	}
+	    curentState.reserver();
+    }
 
 	public boolean estReserve() {
-		// TODO - implement Place.estReserve
-		throw new UnsupportedOperationException();
-	}
+	    return curentState == RESERVER_STATE;
+    }
 
 	public boolean estConfirme() {
-		// TODO - implement Place.estConfirme
-		throw new UnsupportedOperationException();
-	}
+	    return curentState == CONFIRMER_STATE;
+    }
 
 	public String getVoyageID() {
 		// TODO - implement Place.getVoyageID

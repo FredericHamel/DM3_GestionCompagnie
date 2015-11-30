@@ -1,6 +1,7 @@
 package Domaine.Transport.Section;
 
 import Domaine.Voyages.Composants.*;
+import Domaine.Voyages.Visiteur.*;
 import java.util.*;
 import Domaine.Transport.Place.*;
 import Domaine.Transport.Disposition.*;

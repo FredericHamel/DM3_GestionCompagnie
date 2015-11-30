@@ -1,6 +1,7 @@
 package Domaine.Voyages.Composants;
 
 import Domaine.Voyages.Visiteur.*;
+import Domaine.Transport.Section.Section;
 import java.util.*;
 import java.util.Calendar;
 

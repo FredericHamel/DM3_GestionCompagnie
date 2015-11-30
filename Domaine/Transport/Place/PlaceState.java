@@ -1,29 +1,20 @@
 package Domaine.Transport.Place;
 
-public class PlaceState {
+public abstract class PlaceState {
+
+    private Place p;
 
 	/**
 	 * 
 	 * @param p
 	 */
 	protected PlaceState(Place p) {
-		// TODO - implement PlaceState.PlaceState
-		throw new UnsupportedOperationException();
+		this.p = p;
 	}
 
-	public void reserver() {
-		// TODO - implement PlaceState.reserver
-		throw new UnsupportedOperationException();
-	}
+	public abstract void reserver();
 
-	public void confirmer() {
-		// TODO - implement PlaceState.confirmer
-		throw new UnsupportedOperationException();
-	}
+	public abstract void confirmer();
 
-	public void annuler() {
-		// TODO - implement PlaceState.annuler
-		throw new UnsupportedOperationException();
-	}
-
+	public abstract void annuler();
 }

@@ -7,8 +7,7 @@ public class DisponibleState extends PlaceState {
 	 * @param p
 	 */
 	public DisponibleState(Place p) {
-		// TODO - implement DisponibleState.DisponibleState
-		throw new UnsupportedOperationException();
+		super(p);
 	}
 
 	public void reserver() {

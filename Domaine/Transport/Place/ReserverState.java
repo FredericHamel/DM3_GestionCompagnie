@@ -7,9 +7,8 @@ public class ReserverState extends PlaceState {
 	 * @param p
 	 */
 	public ReserverState(Place p) {
-		// TODO - implement ReserverState.ReserverState
-		throw new UnsupportedOperationException();
-	}
+	    super(p);
+    }
 
 	public void reserver() {
 		// TODO - implement ReserverState.reserver
