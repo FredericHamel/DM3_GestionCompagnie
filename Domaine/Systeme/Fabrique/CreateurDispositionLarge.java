@@ -12,7 +12,7 @@ public class CreateurDispositionLarge implements CreateurDisposition {
 	}
 
 	public static CreateurDispositionLarge getInstance() {
-		return this.instance;
+		return instance;
 	}
 
 	/**

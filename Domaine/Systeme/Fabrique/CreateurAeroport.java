@@ -1,8 +1,10 @@
 package Domaine.Systeme.Fabrique;
 
+import Domaine.Voyages.Composants.Lieu;
+
 public class CreateurAeroport implements CreateurLieu {
 
-	private static CreateurAeroport instance = new CreateurAeroport();
+	private static CreateurAeroport instance = null;
 
 	private CreateurAeroport CreateurAeroport() {
 		// TODO - implement CreateurAeroport.CreateurAeroport
@@ -21,7 +23,7 @@ public class CreateurAeroport implements CreateurLieu {
 	 * @param nom
 	 * @param ville
 	 */
-	public void creerLieu(String nom, String ville) {
+	public Lieu creerLieu(String nom, String ville) {
 		// TODO - implement CreateurAeroport.creerLieu
 		throw new UnsupportedOperationException();
 	}

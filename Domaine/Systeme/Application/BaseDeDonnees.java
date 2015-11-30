@@ -76,11 +76,10 @@ public class BaseDeDonnees implements ISujetBDDCoteClient, ISujetBDDCoteAdmin {
 	}
 	
 	public ArrayList<IObservateurBDDAdmin> getAdminObservateur(){
-		
-		
+		return null;	
 	}
 	
 	public ArrayList<IObservateurBDDClient> getClientObservateur(){
-		
+		return null;
 	}
 }

@@ -1,5 +1,6 @@
 package Domaine.Systeme.Commande;
 
+import Domaine.Systeme.Application.AdministrateurSysteme;
 import Domaine.Systeme.Fabrique.*;
 
 public class CreerPlaceCommande extends CreerCommande {
@@ -28,7 +29,7 @@ public class CreerPlaceCommande extends CreerCommande {
 	 * @param c
 	 * @param s
 	 */
-	public CreerPlaceCommande CreerPlaceCommande(AdministrateurSysteme admin, CreateurPlaceCommande c, Section s) {
+	public CreerPlaceCommande(AdministrateurSysteme admin, CreateurPlaceCommande c, Section s) {
 		// TODO - implement CreerPlaceCommande.CreerPlaceCommande
 		throw new UnsupportedOperationException();
 	}

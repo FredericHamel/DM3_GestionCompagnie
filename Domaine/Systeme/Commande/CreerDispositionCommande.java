@@ -1,10 +1,11 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Systeme.Fabrique.*;
+import Domaine.Transport.Section.Section;
 
 public class CreerDispositionCommande extends CreerCommande {
 
-	private ISection s;
+	private Section s;
 	private CreateurDisposition c;
 
 	/**
@@ -12,7 +13,7 @@ public class CreerDispositionCommande extends CreerCommande {
 	 * @param s
 	 * @param c
 	 */
-	public void execute(ISection s, CreateurDisposition c) {
+	public void execute(Section s, CreateurDisposition c) {
 		// TODO - implement CreerDispositionCommande.execute
 		throw new UnsupportedOperationException();
 	}

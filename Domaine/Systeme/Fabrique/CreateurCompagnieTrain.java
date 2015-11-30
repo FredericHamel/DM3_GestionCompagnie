@@ -1,6 +1,9 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
+import Domaine.Voyages.Composants.Compagnie;
+import Domaine.Voyages.Composants.CompagnieTrain;
+
 public class CreateurCompagnieTrain implements CreateurCompagnie{
 
 	private static CreateurCompagnieTrain instance;
@@ -21,7 +24,7 @@ public class CreateurCompagnieTrain implements CreateurCompagnie{
 	 * 
 	 * @param nom
 	 */
-	public CompagnieTrain creerCompagnie(String nom) {
+	public Compagnie creerCompagnie(String nom) {
 		// TODO - implement CreateurCompagnieTrain.creerCompagnie
 		throw new UnsupportedOperationException();
 	}

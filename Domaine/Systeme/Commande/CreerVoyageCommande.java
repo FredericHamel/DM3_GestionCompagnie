@@ -1,6 +1,10 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Voyages.Composants.*;
+
+import java.util.Date;
+
+import Domaine.Systeme.Application.AdministrateurSysteme;
 import Domaine.Systeme.Fabrique.*;
 
 public class CreerVoyageCommande extends CreerCommande {
@@ -33,7 +37,7 @@ public class CreerVoyageCommande extends CreerCommande {
 	 * @param c
 	 * @param prix
 	 */
-	public CreerVoyageCommande CreerVoyageCommande(AdministrateurSysteme admin, Date dateArrivee, Date heureDepart, Date heureArrive, Date dateDepart, Description d, CreateurSection c, float prix) {
+	public CreerVoyageCommande(AdministrateurSysteme admin, Date dateArrivee, Date heureDepart, Date heureArrive, Date dateDepart, Description d, CreateurSection c, float prix) {
 		// TODO - implement CreerVoyageCommande.CreerVoyageCommande
 		throw new UnsupportedOperationException();
 	}

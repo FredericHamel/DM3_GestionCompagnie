@@ -12,7 +12,7 @@ public class CreateurSiegeAvion implements CreateurPlace {
 	}
 
 	public static CreateurSiegeAvion getInstance() {
-		return this.instance;
+		return instance;
 	}
 
 	/**

@@ -30,4 +30,10 @@ public class CreateurSectionDecoree implements CreateurSection{
 		throw new UnsupportedOperationException();
 	}
 
+	@Override
+	public SectionSimple creerSection(Voyage v, SectionDecorateur sd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

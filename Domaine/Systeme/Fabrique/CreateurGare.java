@@ -1,6 +1,8 @@
 package Domaine.Systeme.Fabrique;
 import java.util.*;
 
+import Domaine.Voyages.Composants.Gare;
+
 public class CreateurGare implements CreateurLieu{
 
 	private static CreateurGare instance;

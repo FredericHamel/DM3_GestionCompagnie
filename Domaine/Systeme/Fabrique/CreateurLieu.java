@@ -1,5 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
+import Domaine.Voyages.Composants.Lieu;
+
 public abstract interface CreateurLieu {
 
 	/**

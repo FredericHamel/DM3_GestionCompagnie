@@ -1,5 +1,7 @@
 package Domaine.Systeme.Fabrique;
 
+import Domaine.Voyages.Composants.Compagnie;
+
 public class CreateurCompagnieAerienne implements CreateurCompagnie{
 
 	private static CreateurCompagnieAerienne instance;
@@ -20,7 +22,7 @@ public class CreateurCompagnieAerienne implements CreateurCompagnie{
 	 * 
 	 * @param nom
 	 */
-	public CompagnieAerienne creerCompagnie(String nom) {
+	public Compagnie creerCompagnie(String nom) {
 		// TODO - implement CreateurCompagnieAerienne.creerCompagnie
 		throw new UnsupportedOperationException();
 	}

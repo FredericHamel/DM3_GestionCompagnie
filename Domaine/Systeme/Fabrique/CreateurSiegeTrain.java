@@ -12,7 +12,7 @@ public class CreateurSiegeTrain implements CreateurPlace {
 	}
 
 	public static CreateurSiegeTrain getInstance() {
-		return this.instance;
+		return instance;
 	}
 
 	/**

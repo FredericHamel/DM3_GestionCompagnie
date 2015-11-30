@@ -12,7 +12,7 @@ public class CreateurDispositionConfort implements CreateurDisposition {
 	}
 
 	public static CreateurDispositionConfort getInstance() {
-		return this.instance;
+		return instance;
 	}
 
 	/**

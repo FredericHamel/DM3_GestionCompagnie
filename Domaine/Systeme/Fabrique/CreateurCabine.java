@@ -14,7 +14,7 @@ public class CreateurCabine implements CreateurPlace{
 	}
 
 	public static CreateurCabine getInstance() {
-		return this.instance;
+		return instance;
 	}
 
 	/**

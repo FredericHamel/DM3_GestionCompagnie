@@ -7,12 +7,12 @@ public class CreateurDescritptionVol implements CreateurDescription{
 
 	private static CreateurDescritptionVol instance;
 
-	private CreateurDescriptionVol CreateurDescriptionVol() {
+	private CreateurDescritptionVol CreateurDescriptionVol() {
 		// TODO - implement CreateurDescritptionVol.CreateurDescriptionVol
 		throw new UnsupportedOperationException();
 	}
 
-	public static CreateurDescriptionVol getInstance() {
+	public static CreateurDescritptionVol getInstance() {
 		if(instance == null){
 			instance = new CreateurDescritptionVol();
 		}

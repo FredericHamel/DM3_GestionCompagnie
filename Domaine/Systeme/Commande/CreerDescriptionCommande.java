@@ -8,7 +8,7 @@ public class CreerDescriptionCommande extends CreerCommande {
 
 	private Compagnie co;
 	private String jourDepart;
-	private Time duree;
+	private int duree;
 	private ArrayList<Lieu> lieux;
 	private CreateurDescription c;
 

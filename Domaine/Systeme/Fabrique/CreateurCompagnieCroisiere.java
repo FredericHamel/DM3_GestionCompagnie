@@ -1,6 +1,8 @@
 package Domaine.Systeme.Fabrique;
 
-public class CreateurCompagnieCroisiere implements CreateurCompagnieCroisiere{
+import Domaine.Voyages.Composants.Compagnie;
+
+public class CreateurCompagnieCroisiere {
 
 	private static CreateurCompagnieCroisiere instance;
 
@@ -20,7 +22,7 @@ public class CreateurCompagnieCroisiere implements CreateurCompagnieCroisiere{
 	 * 
 	 * @param nom
 	 */
-	public CompagnieCroisiere creerCompagnie(String nom) {
+	public Compagnie creerCompagnie(String nom) {
 		// TODO - implement CreateurCompagnieCroisiere.creerCompagnie
 		throw new UnsupportedOperationException();
 	}
