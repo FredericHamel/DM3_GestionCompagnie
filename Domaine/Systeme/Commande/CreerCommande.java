@@ -9,8 +9,7 @@ public abstract class CreerCommande implements ICommande {
 	protected AdministrateurSysteme admin;
 
 	public void execute() {
-		// TODO - implement CreerCommande.execute
-		throw new UnsupportedOperationException();
+		
 	}
 
 	public void undo() {

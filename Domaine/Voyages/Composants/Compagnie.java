@@ -11,6 +11,10 @@ public abstract class Compagnie extends Composite implements IVisitable {
 	protected String nom;
 	protected String uniqueID_C;
 
+	public Compagnie(String nom, String Id){
+		this.nom = nom;
+		this.uniqueID_C = Id;
+	}
 	/**
 	 * 
 	 * @param nom
@@ -31,6 +35,10 @@ public abstract class Compagnie extends Composite implements IVisitable {
 	public void supprimerToutesDescriptions() {
 		// TODO - implement Compagnie.supprimerToutesDescriptions
 		throw new UnsupportedOperationException();
+	}
+	
+	public void accept(Visitor v){
+		
 	}
 
 	/**

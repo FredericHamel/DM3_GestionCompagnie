@@ -3,17 +3,18 @@ package Domaine.Systeme.IdManager;
 public class CompagnieIdManager{
 
 	private static CompagnieIdManager instance = new CompagnieIdManager();
+	private String lastID;
+	
+	private CompagnieIdManager(){
+		this.lastID = "AAA";	
+	}
 	
 	public static CompagnieIdManager getInstance() {
-		if(instance == null){
-			instance = new CompagnieIdManager();
-		}
 		return instance;
 	}
 
 	public String generateID() {
-		// TODO - implement CompagnieIdManager.generateID
-		throw new UnsupportedOperationException();
+		return "YUL"; //Pour le test seulement; la fonction ne genere pas d'ID autre pour le moment
 	}
 
 }

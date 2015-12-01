@@ -1,8 +1,14 @@
 package Domaine.Voyages.Composants;
 import java.util.*;
+import Domaine.Voyages.Visiteur.*;
 
-public abstract class CompagnieAerienne extends Compagnie {
+public class CompagnieAerienne extends Compagnie {
 
+	
+	public CompagnieAerienne(String nom, String Id){
+		super(nom, Id);
+	}
+	
 	/**
 	 * 
 	 * @param IDCompagnie
@@ -23,6 +29,9 @@ public abstract class CompagnieAerienne extends Compagnie {
 	public void creerDisposition() {
 		// TODO - implement CompagnieAerienne.creerDisposition
 		throw new UnsupportedOperationException();
+	}
+	public void accept(Visitor v){
+		
 	}
 
 }

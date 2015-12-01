@@ -6,12 +6,13 @@ import Domaine.Systeme.Fabrique.*;
 import Domaine.Transport.Section.*;
 import Domaine.Transport.Disposition.*;
 import Domaine.Transport.Place.*;
+import Domaine.Systeme.IdManager.*;
 import java.util.*;
 
 public class AdministrateurSysteme implements IObservateurBDDAdmin {
 
 	private BaseDeDonnees baseDeDonnees;
-	private static AdministrateurSysteme instance;
+	private static AdministrateurSysteme instance = null;
 
 	/**
 	 * 
@@ -67,7 +68,11 @@ public class AdministrateurSysteme implements IObservateurBDDAdmin {
 	 * @param nom
 	 */
 	public Compagnie creerCompagnie(CreateurCompagnie c, String nom) {
-		// TODO - implement AdministrateurSysteme.creerCompagnie
+		
+		/*String newIdCompagnie = CompagnieIdManager.getInstance().generateID();
+		//Pour tester:
+		CompagnieAerienne comp = new CompagnieAerienne(nom, newIdCompagnie);
+		return comp;*/
 		throw new UnsupportedOperationException();
 	}
 

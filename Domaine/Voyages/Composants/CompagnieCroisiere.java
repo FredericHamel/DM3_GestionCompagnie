@@ -1,8 +1,14 @@
 package Domaine.Voyages.Composants;
 import java.util.*;
+import Domaine.Voyages.Visiteur.*;
 
-public abstract class CompagnieCroisiere extends Compagnie {
+public class CompagnieCroisiere extends Compagnie {
 
+	
+	public CompagnieCroisiere(String nom, String Id){
+		super(nom, Id);
+	}
+	
 	/**
 	 * 
 	 * @param IDCompagnie
@@ -18,6 +24,10 @@ public abstract class CompagnieCroisiere extends Compagnie {
 	public void supprimerToutesDescriptions() {
 		// TODO - implement CompagnieCroisiere.supprimerToutesDescriptions
 		throw new UnsupportedOperationException();
+	}
+	
+	public void accept(Visitor v){
+		
 	}
 
 }

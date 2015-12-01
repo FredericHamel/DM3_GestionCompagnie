@@ -2,13 +2,12 @@ package Domaine.Systeme.Fabrique;
 
 import Domaine.Voyages.Composants.Compagnie;
 
-public class CreateurCompagnieAerienne implements CreateurCompagnie{
+public final class CreateurCompagnieAerienne implements CreateurCompagnie{
 
-	private static CreateurCompagnieAerienne instance;
+	private static CreateurCompagnieAerienne instance = null;
 
-	private CreateurCompagnieAerienne CreateurCompagnieAerienne() {
-		// TODO - implement CreateurCompagnieAerienne.CreateurCompagnieAerienne
-		throw new UnsupportedOperationException();
+	private CreateurCompagnieAerienne () {
+		super();
 	}
 
 	public static CreateurCompagnieAerienne getInstance() {
