@@ -5,11 +5,15 @@ import java.util.*;
 
 public class Cabine extends Place {
 
+	
+	public Cabine(String numero, Section place) {
+    	super(numero, place);
+    }
 	/**
 	 * 
 	 * @param classe
 	 */
-	public ArrayList<Cabine> changerClasse(Section classe) {
+	public ArrayList<Place> changerClasse(Section classe) {
 		// TODO - implement Cabine.changerClasse
 		throw new UnsupportedOperationException();
 	}

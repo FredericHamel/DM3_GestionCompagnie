@@ -2,6 +2,7 @@ package Domaine.Systeme.Commande;
 
 import Domaine.Voyages.Composants.*;
 import Domaine.Systeme.Fabrique.*;
+import Domaine.Systeme.Application.*;
 import java.util.*;
 
 public class CreerDescriptionCommande extends CreerCommande {

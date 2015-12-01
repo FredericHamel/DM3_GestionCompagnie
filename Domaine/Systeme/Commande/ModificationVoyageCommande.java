@@ -1,15 +1,17 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Voyages.Composants.*;
+import Domaine.Systeme.Application.*;
+import java.util.*;
 
 public class ModificationVoyageCommande extends ModificationCommande {
 
 	private Voyage v;
 	private Date dateDepart;
 	private Date dateArrivee;
-	private Time heureDepart;
-	private Time heureArrive;
-	private Float prix;
+	private Date heureDepart;
+	private Date heureArrive;
+	private float prix;
 
 	public void execute() {
 		// TODO - implement ModificationVoyageCommande.execute
@@ -31,7 +33,7 @@ public class ModificationVoyageCommande extends ModificationCommande {
 	 * @param heureArrive
 	 * @param prix
 	 */
-	public ModificationVoyageCommande ModificationVoyageCommande(AdministrateurSysteme admin, Voyage v, Date dateDepart, Date dateArrivee, Time heureDepart, Time heureArrive, Float prix) {
+	public ModificationVoyageCommande ModificationVoyageCommande(AdministrateurSysteme admin, Voyage v, Date dateDepart, Date dateArrivee, Date heureDepart, Date heureArrive, float prix) {
 		// TODO - implement ModificationVoyageCommande.ModificationVoyageCommande
 		throw new UnsupportedOperationException();
 	}

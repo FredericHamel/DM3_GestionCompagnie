@@ -1,9 +1,11 @@
 package Domaine.Voyages.Visiteur;
+
+import Domaine.Transport.Section.*;
 import java.util.*;
 
 public class StructureDeDonnees {
 
-	IVisitable elements;
+	private IVisitable elements;
 	private String uniqueID_C;
 	private String numero;
 	private String uniqueID_V;

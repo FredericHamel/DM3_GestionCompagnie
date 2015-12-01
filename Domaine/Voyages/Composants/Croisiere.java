@@ -6,11 +6,16 @@ import java.util.*;
 
 public class Croisiere extends Voyage {
 
+	
+	public Croisiere(){
+		super();
+	}
+	
 	/**
 	 * 
 	 * @param classe
 	 */
-	public ArrayList<Cabine> listerPlacesLibres(Section classe) {
+	public ArrayList<Place> listerPlacesLibres(Section classe) {
 		// TODO - implement Croisiere.listerPlacesLibres
 		throw new UnsupportedOperationException();
 	}

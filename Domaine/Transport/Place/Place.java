@@ -17,13 +17,13 @@ public abstract class Place extends Leaf implements IVisitable {
     private PlaceState curentState;
 
     protected Place(String numero, Section place) {
+    	this.numero = numero;
+        this.place = place;
         DISPONIBLE_STATE = new DisponibleState(this);
         RESERVER_STATE = new ReserverState(this);
         CONFIRMER_STATE = new ConfirmerState(this);
 
         setCurrentState(DISPONIBLE_STATE);
-        this.numero = numero;
-        this.place = place;
     }
 
     void setCurrentState(PlaceState state)

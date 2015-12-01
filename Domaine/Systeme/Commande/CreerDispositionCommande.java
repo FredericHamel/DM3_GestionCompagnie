@@ -1,6 +1,8 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Systeme.Fabrique.*;
+import Domaine.Systeme.Application.*;
+
 import Domaine.Transport.Section.Section;
 
 public class CreerDispositionCommande extends CreerCommande {
@@ -29,7 +31,7 @@ public class CreerDispositionCommande extends CreerCommande {
 	 * @param c
 	 * @param s
 	 */
-	public CreerDispositionCommande CreerDispositionCommande(AdministrateurSysteme admin, CreateurDisposition c, ISection s) {
+	public CreerDispositionCommande CreerDispositionCommande(AdministrateurSysteme admin, CreateurDisposition c, Section s) {
 		// TODO - implement CreerDispositionCommande.CreerDispositionCommande
 		throw new UnsupportedOperationException();
 	}

@@ -10,7 +10,7 @@ public class Train extends Voyage {
 	 * 
 	 * @param classe
 	 */
-	public ArrayList<SiegeTrain> listerPlacesLibres(Section classe) {
+	public ArrayList<Place> listerPlacesLibres(Section classe) {
 		// TODO - implement Train.listerPlacesLibres
 		throw new UnsupportedOperationException();
 	}

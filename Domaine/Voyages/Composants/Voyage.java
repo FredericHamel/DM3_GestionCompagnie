@@ -19,6 +19,10 @@ public abstract class Voyage extends Composite implements IVisitable {
 	protected float prix;
 	protected boolean disponible;
 
+	protected Voyage(){
+		
+	}
+	
 	public String getVoyageID() {
 		// TODO - implement Voyage.getVoyageID
 		throw new UnsupportedOperationException();

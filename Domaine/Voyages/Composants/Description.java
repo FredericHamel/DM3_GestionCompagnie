@@ -7,8 +7,8 @@ import java.util.Calendar;
 
 public abstract class Description extends Leaf implements IVisitable {
 
-	Collection<Voyage> voyage;
-	Collection<Lieu> lieux;
+	protected ArrayList<Voyage> voyage;
+	protected ArrayList<Lieu> lieux;
 	protected String numero;
 	protected String jourDepart;
 	protected Date duree;

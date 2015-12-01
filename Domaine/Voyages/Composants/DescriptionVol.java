@@ -10,7 +10,7 @@ public class DescriptionVol extends Description {
 	 * @param date
 	 * @param classe
 	 */
-	public ArrayList<Vol> listerVoyages(Date date, Section classe) {
+	public ArrayList<Voyage> listerVoyages(Date date, Section classe) {
 		// TODO - implement DescriptionVol.listerVoyages
 		throw new UnsupportedOperationException();
 	}

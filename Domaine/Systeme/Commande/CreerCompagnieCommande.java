@@ -1,6 +1,7 @@
 package Domaine.Systeme.Commande;
 
 import Domaine.Systeme.Fabrique.*;
+import Domaine.Systeme.Application.*;
 
 public class CreerCompagnieCommande extends CreerCommande {
 
